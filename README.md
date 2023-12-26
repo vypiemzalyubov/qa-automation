@@ -4,6 +4,7 @@
   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkGn9x-dWmqCgxntmVOzaZ_9xjDKDjUxp5yyP1SlQEMYVZ1q7C29tH5T_T8ODUJ7k1yK8&usqp=CAU" width="150"/>
 </div>
 
+---
 
 - [**REST API**](https://github.com/vypiemzalyubov/qa-automation/tree/main/REST%20API)
   - [**Python REST API Automation | Автоматизация REST API на Python**](https://github.com/vypiemzalyubov/qa-automation/tree/main/REST%20API/Python%20REST%20API%20Automation)
