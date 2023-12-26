@@ -1,0 +1,3 @@
+selenium
+packaging
+webdriver-manager
