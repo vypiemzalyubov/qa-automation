@@ -13,7 +13,13 @@ from selenium.webdriver.chrome.service import Service
 service = Service(ChromeDriverManager().install())
 driver = webdriver.Chrome(service=service)
 
-# Firefox
+# Firefox first method
+
+from selenium import webdriver
+
+driver = webdriver.Firefox()
+
+# Firefox second method (Ubuntu)
 
 from selenium import webdriver
 from selenium.webdriver.firefox.service import Service
