@@ -2,26 +2,26 @@ from selenium import webdriver
 
 driver = webdriver.Chrome()
 
-vk_url = "https://vk.com/"
-ya_url = "https://ya.ru/"
-vk_title = "ВКонтакте | Добро пожаловать"
+VK_URL = "https://vk.com/"
+YA_URL = "https://ya.ru/"
+VK_TITLE = "ВКонтакте | Добро пожаловать"
 
-driver.get(vk_url)
-PAGE_TITLE_VK = driver.title
-print("Page Title: ", PAGE_TITLE_VK)
+driver.get(VK_URL)
+page_title_vk = driver.title
+print("Page Title: ", page_title_vk)
 
-driver.get(ya_url)
-PAGE_TITLE_YA = driver.title
-print("Page Title: ", PAGE_TITLE_YA)
+driver.get(YA_URL)
+page_title_ya = driver.title
+print("Page Title: ", page_title_ya)
 
 driver.back()
-PAGE_TITLE = driver.title
-assert vk_title == PAGE_TITLE, f"The page title should be {vk_title}. Current title: {PAGE_TITLE}"
+page_title = driver.title
+assert VK_TITLE == page_title, f"The page title should be {VK_TITLE}. Current title: {page_title}"
 
 driver.refresh()
-PAGE_URL = driver.current_url
-print("Page URL: ", PAGE_URL)
+page_url = driver.current_url
+print("Page URL: ", page_url)
 
 driver.forward()
-NEW_PAGE_URL = driver.current_url
-assert ya_url == NEW_PAGE_URL, f"The page URL should be {ya_url}. Current URL: {NEW_PAGE_URL}"
+new_page_url = driver.current_url
+assert YA_URL == new_page_url, f"The page URL should be {YA_URL}. Current URL: {new_page_url}"
