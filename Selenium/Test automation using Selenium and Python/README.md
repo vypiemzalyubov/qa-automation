@@ -8,7 +8,7 @@
 
 ---
 
-- [**Знакомимся с Selenium**](https://github.com/vypiemzalyubov/python/tree/main/Automation/Selenium/Test%20automation%20using%20Selenium%20and%20Python/1.%20Introducing%20Selenium)
-- [**Полезные методы Selenium**](https://github.com/vypiemzalyubov/python/tree/main/Automation/Selenium/Test%20automation%20using%20Selenium%20and%20Python/2.%20Useful%20Selenium%20methods)
-- [**Тестовые фреймворки**](https://github.com/vypiemzalyubov/python/tree/main/Automation/Selenium/Test%20automation%20using%20Selenium%20and%20Python/3.%20Testing%20Frameworks)
-- [**Применение паттерна Page Object Model**](https://github.com/vypiemzalyubov/python/tree/main/Automation/Selenium/Test%20automation%20using%20Selenium%20and%20Python/4.%20Applying%20the%20Page%20Object%20Model%20Pattern)
+- [**Знакомимся с Selenium**](https://github.com/vypiemzalyubov/qa-automation/tree/main/Selenium/Test%20automation%20using%20Selenium%20and%20Python/1.%20Introducing%20Selenium)
+- [**Полезные методы Selenium**](https://github.com/vypiemzalyubov/qa-automation/tree/main/Selenium/Test%20automation%20using%20Selenium%20and%20Python/2.%20Useful%20Selenium%20methods)
+- [**Тестовые фреймворки**](https://github.com/vypiemzalyubov/qa-automation/tree/main/Selenium/Test%20automation%20using%20Selenium%20and%20Python/3.%20Testing%20Frameworks)
+- [**Применение паттерна Page Object Model**](https://github.com/vypiemzalyubov/qa-automation/tree/main/Selenium/Test%20automation%20using%20Selenium%20and%20Python/4.%20Applying%20the%20Page%20Object%20Model%20Pattern)
