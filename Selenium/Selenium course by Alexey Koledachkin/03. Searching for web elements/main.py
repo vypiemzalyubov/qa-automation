@@ -12,5 +12,3 @@ wiki_icon = driver.find_element("class name", "wikipedia-icon")
 wiki_input_by_id = driver.find_element("id", "Wikipedia1_wikipedia-search-input")
 wiki_input_by_class = driver.find_element("class name", "wikipedia-search-input")
 h2_elem = driver.find_element("tag name", "h2")
-
-print(wiki_icon, wiki_input_by_id, wiki_input_by_class, h2_elem, sep="\n")
