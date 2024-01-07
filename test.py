@@ -1,41 +1,35 @@
-import os
-import shutil
-import time
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 
 chrome_options = webdriver.ChromeOptions()
 chrome_options.add_argument("--window-size=1280,800")
-preferences = {
-    "download.default_directory": f"{os.getcwd()}\downloads",
-    "download.prompt_for_download": False, 
-    "download.directory_upgrade": True,
-    "safebrowsing.enabled": False 
-}
-chrome_options.add_experimental_option("prefs", preferences)
-# chrome_options.page_load_strategy = 'eager'
-# chrome_options.add_argument("--headless")
-# chrome_options.add_argument("--incognito")
-# chrome_options.add_argument("--ignore-certificate-errors")
-# chrome_options.add_argument("--disable-cache")
+chrome_options.add_argument("--ignore-certificate-errors")
 service = Service(ChromeDriverManager().install())
 driver = webdriver.Chrome(service=service, options=chrome_options)
 
-folder_path = f"{os.getcwd()}\downloads"
+wait = WebDriverWait(driver, 15, poll_frequency=1)
 
-def clear_folder(folder_path): 
-    shutil.rmtree(folder_path) 
-    os.makedirs(folder_path)
-clear_folder(folder_path)
+# driver.get("https://demoqa.com/dynamic-properties")
 
-driver.get("https://the-internet.herokuapp.com/download")
+# VISIBLE_AFTER_BUTTON = ("xpath", "//button[@id='visibleAfter']")
+# wait.until(EC.visibility_of_element_located(VISIBLE_AFTER_BUTTON)).click()
 
-time.sleep(3)
-driver.find_elements("xpath", "//a")[3].click()
-time.sleep(3)
+# VISIBLE_IN_SECONDS = ("xpath", "//button[@id='enableAfter']")
+# wait.until(EC.element_to_be_clickable(VISIBLE_IN_SECONDS)).click()
 
+driver.get("https://the-internet.herokuapp.com/dynamic_controls")
 
-# driver.get("https://the-internet.herokuapp.com/upload")
-# upload = driver.find_element("xpath", "//input[@type='file']").send_keys(f"{os.getcwd()}\downloads\Test1.pdf")
-# print(f"{os.getcwd()}\downloads")
+REMOVE_BUTTON = ("xpath", "//button[text()='Remove']")
+driver.find_element(*REMOVE_BUTTON).click()
+wait.until(EC.invisibility_of_element_located(REMOVE_BUTTON))
+print("OK")
+
+ENABLE_BUTTON = ("xpath", "//button[text()='Enable']")
+TEXT = ("xpath", "//input[@type='text']")
+wait.until(EC.element_to_be_clickable(ENABLE_BUTTON)).click()
+wait.until(EC.element_to_be_clickable(TEXT)).send_keys("Hello")
+wait.until(EC.text_to_be_present_in_element_value(TEXT, "Hello"))
+print("OK")
