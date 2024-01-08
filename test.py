@@ -10,6 +10,7 @@ from selenium.webdriver.support import expected_conditions as EC
 
 chrome_options = Options()
 chrome_options.add_argument("--window-size=1920,1080")
+chrome_options.add_argument("--disable-cache")
 chrome_options.add_argument("--disable-blink-features=AutomationControlled")
 chrome_options.add_argument("--user-agent=Selenium")
 
@@ -17,9 +18,9 @@ service = Service(ChromeDriverManager().install())
 driver = webdriver.Chrome(service=service, options=chrome_options)
 wait = WebDriverWait(driver, 15, poll_frequency=1)
 
-BASE_URL = "https://www.amazon.com/"
+# BASE_URL = "https://www.amazon.com/"
 
-driver.get(BASE_URL)
+# driver.get(BASE_URL)
 
 # print("Start test: Setting and reading cookies")
 # driver.add_cookie({
@@ -45,5 +46,23 @@ driver.get(BASE_URL)
 # print("Finish test: Deleting cookies")
 
 print("Start test: Shopping cart automation")
-
+URL = "https://www.mvideo.ru/products/smartfon-infinix-hot-40i-8-256gb-black-400246912"
+driver.get(URL)
+# time.sleep(10)
+ADD = ("xpath", "//button[@title='Добавить в корзину']")
+CART = ("xpath", "//button[@title='Перейти в корзину']")
+wait.until(EC.element_to_be_clickable(ADD)).click()
+wait.until(EC.element_to_be_clickable(CART)).click()
+all_cookies1 = driver.get_cookies()
+print(all_cookies1)
+driver.delete_all_cookies()
+all_cookies2 = driver.get_cookies()
+print(all_cookies2)
+# driver.refresh()
+# time.sleep(10)
+# for c in all_cookies1:
+#     driver.add_cookie(c)
+all_cookies3 = driver.get_cookies()
+print(all_cookies3)
+time.sleep(20)
 print("Finish test: Shopping cart automation")
