@@ -23,36 +23,48 @@ OPEN_ALERT_AFTER_5_SECONDS = ("xpath", "//button[@id='alert']")
 
 driver.get(BASE_URL)
 
+
 print("Start test: Click on the \"Change Text to Selenium Webdriver\" button and wait for the element text to change next to it")
+
 click_change_button = driver.find_element(*CHANGE_TEXT_BUTTON)
 click_change_button.click()
 wait.until(EC.text_to_be_present_in_element(TEXT_AFTER_CLICK, "Selenium Webdriver"))
 new_text = wait.until(EC.visibility_of_element_located(TEXT_AFTER_CLICK)).text
 assert new_text == "Selenium Webdriver", \
     f"Invalid text in field: {new_text}. Valid: Selenium Webdriver"
+
 print("Finish test: Click on the \"Change Text to Selenium Webdriver\" button and wait for the element text to change next to it")
 
+
 print("Start test: Click on the \"Display button after 10 seconds\" and wait for the \"Enabled\" button to appear")
+
 click_display_button = driver.find_element(*DISPLAY_AFTER_10_SECONDS_BUTTON)
 click_display_button.click()
 enabled_text = wait.until(EC.visibility_of_element_located(HIDDEN_BUTTON)).text
 assert enabled_text == "Enabled", \
     f"Invalid text in button: {enabled_text}. Valid: Enabled"
+
 print("Finish test: Click on the \"Display button after 10 seconds\" and wait for the \"Enabled\" button to appear")
 
+
 print("Start test: Click on the \"Enable button after 10 seconds\" button and wait for the \"Button\" button to be clickable")
+
 click_enable_button = driver.find_element(*ENABLE_AFTER_10_SECONDS_BUTTON)
 click_enable_button.click()
 disable_button = wait.until(EC.element_to_be_clickable(DISABLE_BUTTON))
 assert isinstance(disable_button, selenium.webdriver.remote.webelement.WebElement), \
     f"Invalid object type: {type(disable_button)}"
+
 print("Finish test: Click on the \"Enable button after 10 seconds\" button and wait for the \"Button\" button to be clickable")
 
+
 print("Start test: Click on the \"Click me, to Open an alert after 5 seconds\" button and wait for the alert to open")
+
 click_open_alert_button = driver.find_element(*OPEN_ALERT_AFTER_5_SECONDS)
 click_open_alert_button.click()
 alert_window = wait.until(EC.alert_is_present())
 assert alert_window.text == "I got opened after 5 secods", \
     f"Invalid text in alert: {alert_window.text}. Valid: I got opened after 5 secods"
 alert_window.accept()
+
 print("Finish test: Click on the \"Click me, to Open an alert after 5 seconds\" button and wait for the alert to open")
