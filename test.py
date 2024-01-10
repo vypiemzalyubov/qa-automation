@@ -16,26 +16,32 @@ service = Service(ChromeDriverManager().install())
 driver = webdriver.Chrome(service=service, options=chrome_options)
 wait = WebDriverWait(driver, 15, poll_frequency=1)
 
-BASE_URL = "http://the-internet.herokuapp.com/checkboxes"
+BASE_URL = "https://demoqa.com/selectable"
+GO_TO_GRID = ("xpath", "//a[text()='Grid']")
+ONE_BUTTON = ("xpath", "//li[text()='One']")
+TWO_BUTTON = ("xpath", "//li[text()='Two']")
+
+
+print("Start test")
 
 driver.get(BASE_URL)
 
-CHECKBOX_1 = ("xpath", "//input[@type='checkbox'][1]")
-CHECKBOX_2 = ("xpath", "//input[@type='checkbox'][2]")
+wait.until(EC.element_to_be_clickable(GO_TO_GRID)).click()
 
-# # Выполняем клик по первому чек-боксу
-# driver.find_element(*CHECKBOX_1).click()
-# # Убеждаемся что первый чек-бокс действительно выставлен
-# assert driver.find_element(*CHECKBOX_1).get_attribute("checked") is not None
-# # Выполняем клик по второму чек-боксу
-# driver.find_element(*CHECKBOX_2).click()
-# # Убеждаемся что второй чек-бокс действительно не выставлен
-# assert driver.find_element(*CHECKBOX_2).get_attribute("checked") is None
+wait.until(EC.element_to_be_clickable(ONE_BUTTON)).click()
+assert "active" in wait.until(EC.element_to_be_clickable(ONE_BUTTON)).get_attribute("class"), \
+    "Element \"One\" is not selected"
 
-# Ставим флажок
-driver.find_element(*CHECKBOX_1).click()
-assert driver.find_element(*CHECKBOX_1).is_selected() is True, "Чек-бокс не выбран"
+wait.until(EC.element_to_be_clickable(TWO_BUTTON)).click()
+assert "active" in wait.until(EC.element_to_be_clickable(TWO_BUTTON)).get_attribute("class"), \
+    "Element \"Two\" is not selected"
 
-# Убираем флажок
-driver.find_element(*CHECKBOX_2).click()
-assert driver.find_element(*CHECKBOX_2).is_selected() is False, "Чек-бокс до сих пор выбран"
+wait.until(EC.element_to_be_clickable(ONE_BUTTON)).click()
+assert "active" not in wait.until(EC.element_to_be_clickable(ONE_BUTTON)).get_attribute("class"), \
+    "Element \"One\" is not selected, but should not be"
+
+wait.until(EC.element_to_be_clickable(TWO_BUTTON)).click()
+assert "active" not in wait.until(EC.element_to_be_clickable(TWO_BUTTON)).get_attribute("class"), \
+    "Element \"Two\" is not selected, but should not be"
+
+print("Finish test")
