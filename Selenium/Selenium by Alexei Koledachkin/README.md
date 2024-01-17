@@ -8,13 +8,13 @@
 
 ---
 
-- [**Инициализация Chrome и Firefox драйверов**](https://github.com/vypiemzalyubov/qa-automation/tree/main/Selenium/Selenium%20course%20by%20Alexey%20Koledachkin/01.%20Initializing%20Chrome%20and%20Firefox%20drivers)
-- [**Получение данных из браузера и их валидация**](https://github.com/vypiemzalyubov/qa-automation/tree/main/Selenium/Selenium%20course%20by%20Alexey%20Koledachkin/02.%20Receiving%20data%20from%20the%20browser%20and%20validating%20it)
-- [**Поиск вэб-элементов**](https://github.com/vypiemzalyubov/qa-automation/tree/main/Selenium/Selenium%20course%20by%20Alexey%20Koledachkin/03.%20Searching%20for%20web%20elements)
-- [**Xpath-локаторы**](https://github.com/vypiemzalyubov/qa-automation/tree/main/Selenium/Selenium%20course%20by%20Alexey%20Koledachkin/04.%20Xpath%20locators)
-- [**Работа с полями ввода**](https://github.com/vypiemzalyubov/qa-automation/tree/main/Selenium/Selenium%20course%20by%20Alexey%20Koledachkin/05.%20Working%20with%20input%20fields)
-- [**Загрузка и скачивание файлов**](https://github.com/vypiemzalyubov/qa-automation/tree/main/Selenium/Selenium%20course%20by%20Alexey%20Koledachkin/06.%20Upload%20and%20download%20files)
-- [**Явные и неявные ожидания**](https://github.com/vypiemzalyubov/qa-automation/tree/main/Selenium/Selenium%20course%20by%20Alexey%20Koledachkin/07.%20Explicit%20and%20implicit%20expectations)
-- [**Работа с cookies**](https://github.com/vypiemzalyubov/qa-automation/tree/main/Selenium/Selenium%20course%20by%20Alexey%20Koledachkin/08.%20Working%20with%20cookies)
-- [**Работа с чек-боксами и радио-кнопками**](https://github.com/vypiemzalyubov/qa-automation/tree/main/Selenium/Selenium%20course%20by%20Alexey%20Koledachkin/09.%20Working%20with%20checkboxes%20and%20radio%20buttons)
-- [**Работа с окнами и вкладками**](https://github.com/vypiemzalyubov/qa-automation/tree/main/Selenium/Selenium%20course%20by%20Alexey%20Koledachkin/10.%20Working%20with%20windows%20and%20tabs)
+- [**Инициализация Chrome и Firefox драйверов**](https://github.com/vypiemzalyubov/qa-automation/tree/main/Selenium/Selenium%20by%20Alexei%20Koledachkin/01.%20Initializing%20Chrome%20and%20Firefox%20drivers)
+- [**Получение данных из браузера и их валидация**](https://github.com/vypiemzalyubov/qa-automation/tree/main/Selenium/Selenium%20by%20Alexei%20Koledachkin/02.%20Receiving%20data%20from%20the%20browser%20and%20validating%20it)
+- [**Поиск вэб-элементов**](https://github.com/vypiemzalyubov/qa-automation/tree/main/Selenium/Selenium%20by%20Alexei%20Koledachkin/03.%20Searching%20for%20web%20elements)
+- [**Xpath-локаторы**](https://github.com/vypiemzalyubov/qa-automation/tree/main/Selenium/Selenium%20by%20Alexei%20Koledachkin/04.%20Xpath%20locators)
+- [**Работа с полями ввода**](https://github.com/vypiemzalyubov/qa-automation/tree/main/Selenium/Selenium%20by%20Alexei%20Koledachkin/05.%20Working%20with%20input%20fields)
+- [**Загрузка и скачивание файлов**](https://github.com/vypiemzalyubov/qa-automation/tree/main/Selenium/Selenium%20by%20Alexei%20Koledachkin/06.%20Upload%20and%20download%20files)
+- [**Явные и неявные ожидания**](https://github.com/vypiemzalyubov/qa-automation/tree/main/Selenium/Selenium%20by%20Alexei%20Koledachkin/07.%20Explicit%20and%20implicit%20expectations)
+- [**Работа с cookies**](https://github.com/vypiemzalyubov/qa-automation/tree/main/Selenium/Selenium%20by%20Alexei%20Koledachkin/08.%20Working%20with%20cookies)
+- [**Работа с чек-боксами и радио-кнопками**](https://github.com/vypiemzalyubov/qa-automation/tree/main/Selenium/Selenium%20by%20Alexei%20Koledachkin/09.%20Working%20with%20checkboxes%20and%20radio%20buttons)
+- [**Работа с окнами и вкладками**](https://github.com/vypiemzalyubov/qa-automation/tree/main/Selenium/Selenium%20by%20Alexei%20Koledachkin/10.%20Working%20with%20windows%20and%20tabs)
