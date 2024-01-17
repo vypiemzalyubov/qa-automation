@@ -10,5 +10,5 @@
   - [**Python REST API Automation | Автоматизация REST API на Python**](https://github.com/vypiemzalyubov/qa-automation/tree/main/REST%20API/Python%20REST%20API%20Automation)
 - [**Selenium**](https://github.com/vypiemzalyubov/qa-automation/tree/main/Selenium)
   - [**Automation Craft**](https://github.com/vypiemzalyubov/qa-automation/tree/main/Selenium/Automation%20Craft)
-  - [**Selenium course by Alexey Koledachkin | Курс по Selenium от Алексея Коледачкина**](https://github.com/vypiemzalyubov/qa-automation/tree/main/Selenium/Selenium%20course%20by%20Alexey%20Koledachkin)
+  - [**Selenium by Alexei Koledachkin | Selenium от Алексея Коледачкина**](https://github.com/vypiemzalyubov/qa-automation/tree/main/Selenium/Selenium%20by%20Alexei%20Koledachkin)
   - [**Test automation using Selenium and Python | Автоматизация тестирования с помощью Selenium и Python**](https://github.com/vypiemzalyubov/qa-automation/tree/main/Selenium/Test%20automation%20using%20Selenium%20and%20Python)
