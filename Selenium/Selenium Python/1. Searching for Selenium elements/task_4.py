@@ -8,13 +8,13 @@ chrome_options.add_argument('--headless')
 chrome_options.add_argument('--disable-cache')
 chrome_options.add_argument('--disable-blink-features=AutomationControlled')
 
-LINK = ('xpath', '//a[contains(text(), "16243162441624")]')
-RESULT = ('xpath', '//p[@id="result"]')
+TEXT = ('xpath', '//div[@class="text"]/p[2]')
 
 with webdriver.Chrome(options=chrome_options) as driver:
     wait = WebDriverWait(driver, 15, poll_frequency=1)
-    driver.get('https://parsinger.ru/selenium/2/2.html')
+    driver.get('https://parsinger.ru/selenium/3/3.html')
 
-    wait.until(EC.element_to_be_clickable(LINK)).click()
-    result = wait.until(EC.visibility_of_element_located(RESULT)).text
+    text_fields = wait.until(EC.visibility_of_all_elements_located(TEXT))
+
+    result = sum([int(text.text) for text in text_fields])
     print(f'Result: {result}')

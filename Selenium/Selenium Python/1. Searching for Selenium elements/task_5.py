@@ -8,13 +8,18 @@ chrome_options.add_argument('--headless')
 chrome_options.add_argument('--disable-cache')
 chrome_options.add_argument('--disable-blink-features=AutomationControlled')
 
-LINK = ('xpath', '//a[contains(text(), "16243162441624")]')
+CHECKBOX = ('xpath', '//input[@type="checkbox"]')
+SUBMIT_BTN = ('xpath', '//input[@value="Отправить"]')
 RESULT = ('xpath', '//p[@id="result"]')
 
 with webdriver.Chrome(options=chrome_options) as driver:
     wait = WebDriverWait(driver, 15, poll_frequency=1)
-    driver.get('https://parsinger.ru/selenium/2/2.html')
+    driver.get('https://parsinger.ru/selenium/4/4.html')
 
-    wait.until(EC.element_to_be_clickable(LINK)).click()
+    checkboxes = wait.until(EC.visibility_of_all_elements_located(CHECKBOX))
+    for checkbox in checkboxes:
+        checkbox.click()
+
+    wait.until(EC.element_to_be_clickable(SUBMIT_BTN)).click()
     result = wait.until(EC.visibility_of_element_located(RESULT)).text
     print(f'Result: {result}')
