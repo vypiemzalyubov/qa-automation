@@ -17,8 +17,8 @@ with webdriver.Chrome(options=chrome_options) as driver:
     default_text = wait.until(EC.visibility_of_element_located(RESULT)).text
 
     while True:
+        driver.refresh()
         result = wait.until(EC.visibility_of_element_located(RESULT)).text
         if result != default_text:
             print(f'Result: {result}')
             break
-        driver.refresh()
