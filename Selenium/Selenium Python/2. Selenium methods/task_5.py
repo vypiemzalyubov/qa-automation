@@ -13,16 +13,4 @@ SUBMIT_BTN = ('xpath', '//button[@id="checkButton"]')
 
 with webdriver.Chrome(options=chrome_options) as driver:
     wait = WebDriverWait(driver, 15, poll_frequency=1)
-    driver.get('https://parsinger.ru/selenium/5.5/2/1.html')
-
-    input_fields = wait.until(EC.visibility_of_all_elements_located(INPUT))
-    for field in input_fields:
-        if not field.get_attribute('disabled'):
-            field.clear()
-
-    wait.until(EC.element_to_be_clickable(SUBMIT_BTN)).click()
-
-    alert = wait.until(EC.alert_is_present())
-    alert_text = alert.text
-    alert.accept()
-    print(f'Result: {alert_text}')
+    driver.get('https://parsinger.ru/methods/5/index.html')

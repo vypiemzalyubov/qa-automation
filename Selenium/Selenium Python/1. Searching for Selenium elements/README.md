@@ -1,6 +1,6 @@
 ## Поиск элементов Selenium
 
-### [Task 1. Мастер заполнения форм](https://github.com/vypiemzalyubov/qa-automation/blob/main/Selenium/Selenium%20Python/1.%20Searching%20for%20Selenium%20elements/task_1.py)
+### [Мастер заполнения форм](https://github.com/vypiemzalyubov/qa-automation/blob/main/Selenium/Selenium%20Python/1.%20Searching%20for%20Selenium%20elements/y)
 
 Добро пожаловать в лабораторию мастера заполнения форм! Перед вами стоит непростая задача: вскрыть виртуальный сейф, заполнить поля аутентификации и взять "ключ", который появляется на экране. И конечно же, это нужно сделать всё в течение трёх секунд. Научимся пользоваться инструментами хакера в лучших традициях Hollywood, но в нашем случае всё будет законно и для образовательных целей!
 
@@ -14,7 +14,7 @@
 
 ---
 
-### [Task 2. Охотник за Сокровищами](https://github.com/vypiemzalyubov/qa-automation/blob/main/Selenium/Selenium%20Python/1.%20Searching%20for%20Selenium%20elements/task_2.py)
+### [Охотник за Сокровищами](https://github.com/vypiemzalyubov/qa-automation/blob/main/Selenium/Selenium%20Python/1.%20Searching%20for%20Selenium%20elements/y)
 
 Представьте себя в роли охотника за сокровищами в мире интернета. Ваша задача проста: найти загадочную ссылку с текстом **16243162441624** на указанной странице. Звучит легко, правда? Однако, есть одна особенность — найти эту ссылку нужно автоматически, без ручного поиска. Так вы проверите свои навыки в автоматизации и сможете использовать их для более сложных задач в будущем.
 
@@ -29,7 +29,7 @@
 
 ---
 
-### [Task 3. Кодекс Охотников за Цифрами](https://github.com/vypiemzalyubov/qa-automation/blob/main/Selenium/Selenium%20Python/1.%20Searching%20for%20Selenium%20elements/task_3.py)
+### [Кодекс Охотников за Цифрами](https://github.com/vypiemzalyubov/qa-automation/blob/main/Selenium/Selenium%20Python/1.%20Searching%20for%20Selenium%20elements/y)
 
 Приветствую, будущие аналитики данных и веб-скрейперы! Перед вами стоит задача, которая требует не только знаний в программировании, но и внимания к деталям. Вам нужно "прочитать" секретный кодекс, спрятанный на веб-странице. Кодекс разбит на 300 фрагментов и каждый из них хранится в отдельном теге `<p>`. Ваша задача — собрать все эти фрагменты воедино.
 
@@ -41,7 +41,7 @@
 
 ---
 
-### [Task 4. Поход за сокровищами в Цифровом Лабиринте](https://github.com/vypiemzalyubov/qa-automation/blob/main/Selenium/Selenium%20Python/1.%20Searching%20for%20Selenium%20elements/task_4.py)
+### [Поход за сокровищами в Цифровом Лабиринте](https://github.com/vypiemzalyubov/qa-automation/blob/main/Selenium/Selenium%20Python/1.%20Searching%20for%20Selenium%20elements/y)
 
 Привет, юные искатели данных и загадок! Перед вами лежит миссия, которая проверит ваше умение внимательно "читать" веб-страницы и извлекать из них нужную информацию. На таинственной странице скрыты фрагменты артефакта — всего их 100. Они зашифрованы и размещены во вторых абзацах каждого из 200 блоков текста. Ваша задача — собрать их и воссоздать артефакт.
 
@@ -53,7 +53,7 @@
 
 ---
 
-### [Task 5. Операция "Кодовый Замок"](https://github.com/vypiemzalyubov/qa-automation/blob/main/Selenium/Selenium%20Python/1.%20Searching%20for%20Selenium%20elements/task_5.py)
+### [Операция "Кодовый Замок"](https://github.com/vypiemzalyubov/qa-automation/blob/main/Selenium/Selenium%20Python/1.%20Searching%20for%20Selenium%20elements/y)
 
 Добро пожаловать, агенты! Сегодня перед нами стоит задача не просто извлечь данные, но и взаимодействовать с интерфейсом веб-сайта, чтобы добраться до скрытой информации. Представьте, что перед вами замок с комбинацией в виде чек-боксов.
 
@@ -65,7 +65,7 @@
 
 ---
 
-### [Task 6. Кодовая Одиссея](https://github.com/vypiemzalyubov/qa-automation/blob/main/Selenium/Selenium%20Python/1.%20Searching%20for%20Selenium%20elements/task_6.py)
+### [Кодовая Одиссея](https://github.com/vypiemzalyubov/qa-automation/blob/main/Selenium/Selenium%20Python/1.%20Searching%20for%20Selenium%20elements/y)
 
 Привет, будущие мастера веб-парсинга и аналитики данных! Сегодня перед вами не просто очередная задача, а целая Одиссея, полная загадок и тайн. Смыслом вашего путешествия будет не просто найти все чек-боксы на веб-странице, но выбрать из них особенные, скрытые в коде, как сокровища в подземельях. Ваша цель — активировать только те чек-боксы, которые откроют перед вами путь к драгоценным знаниям, заключенным в таинственной фразе.
 
@@ -77,7 +77,7 @@
 
 ---
 
-### [Task 7. Операция "Выпадающие списки"](https://github.com/vypiemzalyubov/qa-automation/blob/main/Selenium/Selenium%20Python/1.%20Searching%20for%20Selenium%20elements/task_7.py)
+### [Операция "Выпадающие списки"](https://github.com/vypiemzalyubov/qa-automation/blob/main/Selenium/Selenium%20Python/1.%20Searching%20for%20Selenium%20elements/y)
 
 Приветствую, агенты-разработчики! Сегодня наша миссия — "Операция 'Выпадающие списки'". В этой операции мы сталкиваемся с нечто большим, чем просто чек-боксы или текстовые поля. Мы имеем дело с выпадающим списком, содержащим ключи к секретному хранилищу данных.
 
@@ -90,7 +90,7 @@
 
 ---
 
-### [Task 8. Миссия "Загадочный След"](https://github.com/vypiemzalyubov/qa-automation/blob/main/Selenium/Selenium%20Python/1.%20Searching%20for%20Selenium%20elements/task_8.py)
+### [Миссия "Загадочный След"](https://github.com/vypiemzalyubov/qa-automation/blob/main/Selenium/Selenium%20Python/1.%20Searching%20for%20Selenium%20elements/y)
 
 Приветствую, будущие эксперты по web-парсингу! Сегодня у нас на очереди не просто задача, а настоящая миссия, которую можно было бы назвать "Загадочный След". Представьте себя детективами в мире веб-страниц: вам предстоит найти ключ к решению на странице, используя его для "отпирания" секретов выпадающего списка, и в конце — раскрывать тайну последней загадки.
 
