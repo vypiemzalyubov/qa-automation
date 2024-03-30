@@ -10,3 +10,4 @@ Selenium - это швейцарский нож в руках программи
 
 - [**Поиск элементов Selenium**](https://github.com/vypiemzalyubov/qa-automation/tree/main/Selenium/Selenium%20Python/1.%20Searching%20for%20Selenium%20elements)
 - [**Методы Selenium**](https://github.com/vypiemzalyubov/qa-automation/tree/main/Selenium/Selenium%20Python/2.%20Selenium%20methods)
+- [**Скроллинг страниц**](https://github.com/vypiemzalyubov/qa-automation/tree/main/Selenium/Selenium%20Python/3.%20Page%20Scrolling)
