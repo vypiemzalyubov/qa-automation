@@ -120,7 +120,7 @@ with webdriver.Chrome(options=chrome_options) as driver:
     person = {}
 
     for cookie in cookies:
-        driver.delete_all_cookies()
+        # driver.delete_all_cookies()
         driver.add_cookie(cookie)
         driver.refresh()
 
