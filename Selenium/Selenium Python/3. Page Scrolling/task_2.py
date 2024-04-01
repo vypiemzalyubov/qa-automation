@@ -22,7 +22,7 @@ with webdriver.Chrome(options=chrome_options) as driver:
     while True:
         actions \
             .move_to_element(wait.until(EC.presence_of_element_located(DIV))) \
-            .scroll_by_amount(0, 1000) \
+            .scroll_by_amount(0, 10) \
             .pause(1) \
             .perform()
         try:
