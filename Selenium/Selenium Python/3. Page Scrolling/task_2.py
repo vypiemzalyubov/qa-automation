@@ -12,7 +12,7 @@ chrome_options.add_argument('--disable-blink-features=AutomationControlled')
 
 DIV = ('xpath', '//div[@id="scroll-container"]/div')
 LAST_SPAN = ('xpath', '//span[@class="last-of-list"]')
-SCROLL_CONTAINER = ('xpath', '//div[@id="scroll-container"]')
+SCROLL_CONTAINER = ('xpath', '//div[@id="scroll-container/p"]')
 
 with webdriver.Chrome(options=chrome_options) as driver:
     wait = WebDriverWait(driver, 15, poll_frequency=1)
@@ -31,5 +31,5 @@ with webdriver.Chrome(options=chrome_options) as driver:
             break
 
     numbers = wait.until(EC.presence_of_element_located(SCROLL_CONTAINER)).text
-    result = sum(int(item) for item in numbers.split())
+    result = sum(int(number) for number in numbers.split())
     print(f'Result: {result}')

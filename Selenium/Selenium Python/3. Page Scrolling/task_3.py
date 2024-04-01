@@ -25,5 +25,5 @@ with webdriver.Chrome(options=chrome_options) as driver:
             .perform()
 
     numbers = wait.until(EC.presence_of_element_located(SCROLL_CONTAINER)).text
-    result = sum(int(item) for item in numbers.split())
+    result = sum(int(number) for number in numbers.split())
     print(f'Result: {result}')
