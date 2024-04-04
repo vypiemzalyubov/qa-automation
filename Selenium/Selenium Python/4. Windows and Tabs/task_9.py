@@ -30,9 +30,8 @@ with webdriver.Chrome(options=chrome_options) as driver:
         driver.switch_to.default_content()
 
     for number in numbers:
-        wait.until(EC.presence_of_element_located(INPUT)).send_keys(number)
+        wait.until(EC.visibility_of_element_located(INPUT)).send_keys(number)
         wait.until(EC.element_to_be_clickable(CHECK_BTN)).click()
-        wait.until(EC.presence_of_element_located(INPUT)).clear()
 
         try:
             if alert := wait.until(EC.alert_is_present()):
@@ -41,4 +40,4 @@ with webdriver.Chrome(options=chrome_options) as driver:
                 print(f'Result: {alert_text}')
                 break
         except TimeoutException:
-            continue
+            wait.until(EC.visibility_of_element_located(INPUT)).clear()
