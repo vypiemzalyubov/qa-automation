@@ -13,3 +13,4 @@ Selenium - это швейцарский нож в руках программи
 - [**Скроллинг страниц**](https://github.com/vypiemzalyubov/qa-automation/tree/main/Selenium/Selenium%20Python/3.%20Page%20Scrolling)
 - [**Окна и вкладки**](https://github.com/vypiemzalyubov/qa-automation/tree/main/Selenium/Selenium%20Python/4.%20Windows%20and%20Tabs)
 - [**Ожидания явные и неявные**](https://github.com/vypiemzalyubov/qa-automation/tree/main/Selenium/Selenium%20Python/5.%20Explicit%20and%20implicit%20expectations)
+- [**Drag and drop**](https://github.com/vypiemzalyubov/qa-automation/tree/main/Selenium/Selenium%20Python/6.%20Drag%20and%20drop)
