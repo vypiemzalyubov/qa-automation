@@ -83,7 +83,7 @@ ids_to_find = ['xhkVEkgm', 'QCg2vOX7', '8KvuO5ja', 'CFoCZ3Ze', '8CiPCnNB', 'XuEM
 
 ---
 
-### Коллекционер секретных рун
+### [Коллекционер секретных рун](https://github.com/vypiemzalyubov/qa-automation/blob/main/Selenium/Selenium%20Python/5.%20Explicit%20and%20implicit%20expectations/task_7.py)
 
 В мире веб-путешествий вы встретили магическую страницу, охраняемую девятью рунными-стражами. Каждый из стражей хранит уникальный секрет, но не торопитесь – за секретами следят назойливые стражи-рекламы.
 
