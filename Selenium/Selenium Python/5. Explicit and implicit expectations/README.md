@@ -96,7 +96,7 @@ ids_to_find = ['xhkVEkgm', 'QCg2vOX7', '8KvuO5ja', 'CFoCZ3Ze', '8CiPCnNB', 'XuEM
 
 ---
 
-### Мерцающий Чек Бокс Мистерии
+### [Мерцающий Чек Бокс Мистерии](https://github.com/vypiemzalyubov/qa-automation/blob/main/Selenium/Selenium%20Python/5.%20Explicit%20and%20implicit%20expectations/task_8.py)
 
 Добро пожаловать в мир непредсказуемости и волшебства Selenium! Сегодня ваш путь ляжет через веб-страницу, полную таинств и секретов. Ваш путеводитель - с вами, а ваша задача - покорить Мерцающий Чек Бокс Мистерии.
 
@@ -115,7 +115,7 @@ ids_to_find = ['xhkVEkgm', 'QCg2vOX7', '8KvuO5ja', 'CFoCZ3Ze', '8CiPCnNB', 'XuEM
 
 ---
 
-### Гирлянда чекбоксов
+### [Гирлянда чекбоксов](https://github.com/vypiemzalyubov/qa-automation/blob/main/Selenium/Selenium%20Python/5.%20Explicit%20and%20implicit%20expectations/task_9.py)
 
 Добро пожаловать в мир, где элементы интерфейса ведут себя как огоньки на новогодней елке, мерцая и играя в непредсказуемом танце. Ваша задача на этот раз - стать частью этого танца, используя инструменты Selenium.
 
